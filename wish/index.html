@@ -32,6 +32,13 @@
   });*/
   var myAudio = document.getElementById("myAudio");
   myAudio.volume = 0.2; // set the volume to 10% of the maximum volume
+  document.getElementById('myAudio').addEventListener("mouseup", tapOrClick, false);
+  document.getElementById('myAudio').addEventListener("touchend", tapOrClick, false);
+
+function tapOrClick(e) {
+    var mp3 = e.target;
+        mp3.parentNode.getElementsByTagName('2.mp3')[0].play();
+}
 
 </script>
   <script  src="./script.js"></script>
