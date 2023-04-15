@@ -21,7 +21,7 @@
 
 <script>
   // Request permission to use the microphone or audio
-navigator.mediaDevices.getUserMedia({audio: true})
+/*navigator.mediaDevices.getUserMedia({audio: true})
   .then(function(stream) {
     console.log('You allowed access to your microphone or audio.');
 
@@ -29,7 +29,7 @@ navigator.mediaDevices.getUserMedia({audio: true})
   })
   .catch(function(err) {
     console.log('You denied access to your microphone or audio. Error: ' + err);
-  });
+  });*/
   var myAudio = document.getElementById("myAudio");
   myAudio.volume = 10%; // set the volume to 10% of the maximum volume
 
