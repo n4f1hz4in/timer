@@ -20,8 +20,19 @@
 
 
 <script>
+  // Request permission to use the microphone or audio
+navigator.mediaDevices.getUserMedia({audio: true})
+  .then(function(stream) {
+    console.log('You allowed access to your microphone or audio.');
+
+    // Add your code for playing the audio here
+  })
+  .catch(function(err) {
+    console.log('You denied access to your microphone or audio. Error: ' + err);
+  });
   var myAudio = document.getElementById("myAudio");
   myAudio.volume = 0.1; // set the volume to 10% of the maximum volume
+
 </script>
   <script  src="./script.js"></script>
 
