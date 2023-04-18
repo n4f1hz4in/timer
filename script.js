@@ -4,7 +4,7 @@ const minutes = document.querySelector("#minutes");
 const seconds = document.querySelector("#seconds");
 
 // Set the target date here
-const targetDate = new Date("2023-04-19T00:30:00");
+const targetDate = new Date("2023-04-19T04:30:00");
 
 function updateTime() {
   const now = new Date();
